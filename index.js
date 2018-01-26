@@ -1,3 +1,5 @@
 module.exports = function (arg) {
-  return arg || {message: 'arguments is empty or falsy'}
+  let detail = arguments.length > 0 ? 'falsy' : 'empty'
+  let message = `arg is ${detail}`
+  return arg || {message}
 }
