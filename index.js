@@ -1,3 +1,3 @@
 module.exports = function (arg) {
-  return arg || true
+  return arg || {message: 'arguments is empty or falsy'}
 }
